@@ -25,4 +25,4 @@ After editing content, run `python3 tools/build.py`, then commit the regenerated
 
 CDU is an Adjunct Lecturer appointment from September 2026 and is not listed as teaching experience. Supervision does not state student counts. The CVIP 2025 paper is listed as published, with a preprint link. Jobs Outside the Bubble is described as an invitation, without an unconfirmed event date. The named commercial lung-imaging product and manuscript MRI figure are not included. Student-era resources remain on the historical Google Site rather than being copied here.
 
-The portrait is served from the account's public GitHub avatar. The site uses no analytics, remote fonts, or external scripts. GitHub Pages itself has its own hosting/privacy terms.
+The portrait is stored locally at `assets/soumen-ghosh.png`. The site uses no analytics, remote fonts, or external scripts. GitHub Pages itself has its own hosting/privacy terms.
