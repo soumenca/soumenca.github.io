@@ -1,0 +1,328 @@
+{
+  "publications": [
+    {
+      "tag": "p",
+      "text": "Selected publications and research outputs in medical imaging and machine learning. For the broader publication record, visit Google Scholar or ORCID."
+    },
+    {
+      "tag": "h2",
+      "text": "Recent papers & preprints"
+    },
+    {
+      "tag": "p",
+      "text": "CRIL-U-Net: Compact Ratio-Interaction Learning for Focal Cortical Dysplasia Segmentation from T1w and FLAIR MRI\nGhosh S, Arya AS, Goswami T, Mandal S, Phamnguyen J, Vashistha R. 2026.\nAccepted at MICAD 2026. Preprint."
+    },
+    {
+      "tag": "p",
+      "text": "Benchmarking MRI Representations for Deep Learning-Based Focal Cortical Dysplasia Segmentation\nGhosh S, Phamnguyen J, Arya AS, Mandal S, Goswami T, Vashistha R. 2026. Preprint.\nRead on arXiv."
+    },
+    {
+      "tag": "p",
+      "text": "NeuroMorphix: A Novel Brain MRI Asymmetry-specific Feature Construction Approach for Seizure Recurrence Prediction\nGhosh S, Vegh V, Moinian S, Moradi H, Sullivan AA, Phamnguyen J, Reutens D. 2024. Preprint.\nRead on arXiv."
+    },
+    {
+      "tag": "h2",
+      "text": "Journal articles"
+    },
+    {
+      "tag": "p",
+      "text": "Image synthesis of interictal SPECT from MRI and PET using machine learning\nFard AS, Reutens DC, Ramsay SC, Goodman SJ, Ghosh S, Vegh V.\nFrontiers in Neurology, 15:1383773, 2024.\nRead article."
+    },
+    {
+      "tag": "p",
+      "text": "Automated extraction of the arterial input function from brain images for parametric PET studies\nMoradi H, Vashistha R, Ghosh S, O’Brien K, Hammond A, Rominger A, Sari H, Shi K, Vegh V, Reutens DC.\nEJNMMI Research, 14:33, 2024.\nRead article."
+    },
+    {
+      "tag": "h2",
+      "text": "Published conference papers"
+    },
+    {
+      "tag": "p",
+      "text": "Stress-testing cross-cancer generalizability of 3D nnU-Net for PET-CT tumour segmentation: multi-cohort evaluation with novel oesophageal and lung cancer datasets\nGhosh S, Jestin Hannan C, Vashistha R, Kundu P, Brosda S, Aoude LG, Lonie J, Nathanson A, Ng J, Barbour AP, Vegh V.\nInternational Conference on Computer Vision and Image Processing (CVIP), 2025. Published conference paper.\narXiv version."
+    },
+    {
+      "tag": "p",
+      "text": "RCCNet: An Efficient Convolutional Neural Network for Histological Routine Colon Cancer Nuclei Classification\nBasha SHS, Ghosh S, Babu KK, Dubey SR, Pulabaigari V, Mukherjee S. ICARCV, IEEE, 2018, pp. 1222–1227."
+    },
+    {
+      "tag": "p",
+      "text": "Third Order Backward Elimination Approach for Fuzzy-Rough Set based Feature Selection\nGhosh S, Sai Prasad PSVS, Rao CR. PReMI, LNCS 10597, 2017, pp. 254–262.\nPublisher."
+    },
+    {
+      "tag": "p",
+      "text": "An Efficient Gaussian Kernel Based Fuzzy-Rough Set Approach for Feature Selection\nGhosh S, Sai Prasad PSVS, Rao CR. MIWAI, 2016, pp. 38–49.\nPublisher."
+    },
+    {
+      "tag": "h2",
+      "text": "Selected conference abstracts"
+    },
+    {
+      "tag": "p",
+      "text": "Deep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI\nSoumen Ghosh, Susmita Saha, Diogo Shiraishi, Thiago Rezende, Ian Harding.\n2026 · ISMRM · Conference abstract."
+    },
+    {
+      "tag": "p",
+      "text": "Evaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance\nSoumen Ghosh, Susmita Saha, Ian Harding.\n2025 · OHBM · Conference abstract."
+    },
+    {
+      "tag": "p",
+      "text": "Unsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy\nSoumen Ghosh, Viktor Vegh, John Phamnguyen, Shahrzad Moinian, David Reutens.\n2024 · OHBM · Conference abstract."
+    },
+    {
+      "tag": "p",
+      "text": "Seizure Recurrence Prediction from MRI and Clinical Information Using Novel Brain Features for Machine Learning\nSoumen Ghosh, Viktor Vegh, Alice-Ann Sullivan, Shahrzad Moinian, John Phamnguyen, David Reutens.\n2023 · AES · Conference abstract."
+    },
+    {
+      "tag": "p",
+      "text": "Early EEG Increases the Rate of Detection of Epileptiform Abnormalities After First Seizure\nAlice-Ann Sullivan, Rebecca Kerr, Xiaohua Chen, Fred Tremayne, Soumen Ghosh, David Reutens.\n2022 · AES · Conference abstract."
+    }
+  ],
+  "research": [
+    {
+      "tag": "p",
+      "text": "My research brings together medical imaging AI, quantitative biomarkers and clinical evaluation. I work across structural and diffusion MRI and thoracic CT, connecting methodological development with questions in diagnosis, disease characterisation and clinical translation."
+    },
+    {
+      "tag": "h2",
+      "text": "Neuroimaging & neurological disease"
+    },
+    {
+      "tag": "h3",
+      "text": "Epilepsy and focal cortical dysplasia"
+    },
+    {
+      "tag": "p",
+      "text": "Developing MRI-based approaches to lesion detection and segmentation, including multimodal T1w/FLAIR learning and unsupervised analysis of ultra-high-field MRI. The NeuroMorphix programme investigates brain asymmetry and clinical information for seizure recurrence prediction after a first unprovoked seizure."
+    },
+    {
+      "tag": "h3",
+      "text": "Neurodegeneration and diffusion MRI"
+    },
+    {
+      "tag": "p",
+      "text": "Automated cerebellar peduncle segmentation and quantitative diffusion MRI in Friedreich’s ataxia, alongside morphometric and network-based analyses of Alzheimer’s disease. This work aims to make imaging measurements more reproducible and sensitive to disease-related variation."
+    },
+    {
+      "tag": "h2",
+      "text": "Occupational lung disease & thoracic imaging"
+    },
+    {
+      "tag": "h3",
+      "text": "Imaging in dust-exposed workers"
+    },
+    {
+      "tag": "p",
+      "text": "At I-MED Radiology Network, I lead research delivery and analysis in occupational lung imaging. ExactDust examines agreement and diagnostic performance between chest radiography and HRCT. Related work focuses on quantitative HRCT assessment of structural lung abnormalities."
+    },
+    {
+      "tag": "h3",
+      "text": "Connecting lung structure and function"
+    },
+    {
+      "tag": "p",
+      "text": "My ACARP-supported research evaluates CT-derived measures of lung function against spirometry and other available pulmonary function measures in coal mine dust lung disease."
+    },
+    {
+      "tag": "h2",
+      "text": "Clinical AI evaluation & translation"
+    },
+    {
+      "tag": "p",
+      "text": "Across these projects, I focus on validation in clinical cohorts, multi-site variability, harmonisation, error analysis and transparent reporting. My experience spans clinical data curation, imaging quality control, segmentation, statistical analysis and reproducible machine learning pipelines."
+    },
+    {
+      "tag": "p",
+      "text": "Methods: MRI and CT analysis · Deep learning · Quantitative biomarkers · Multi-site harmonisation · Diagnostic performance evaluation"
+    },
+    {
+      "tag": "p",
+      "text": "For research collaborations: soumen.ghosh@uq.edu.au"
+    }
+  ],
+  "about": [
+    {
+      "tag": "h2",
+      "text": "About me"
+    },
+    {
+      "tag": "p",
+      "text": "I am a medical imaging AI researcher based in Brisbane, Australia. My work combines machine learning, structural and diffusion MRI, and quantitative CT to investigate neurological and occupational lung disease. I am particularly interested in how robust image analysis and careful clinical evaluation can turn imaging measurements into useful evidence."
+    },
+    {
+      "tag": "h2",
+      "text": "Current appointments"
+    },
+    {
+      "tag": "p",
+      "text": "Senior Researcher · I-MED Radiology Network\nClinical AI evaluation, quantitative imaging and occupational lung disease research."
+    },
+    {
+      "tag": "p",
+      "text": "Honorary Fellow · The University of Queensland\nNeuroimaging and medical imaging AI research."
+    },
+    {
+      "tag": "p",
+      "text": "Adjunct Lecturer · Charles Darwin University\nAppointed September 2026."
+    },
+    {
+      "tag": "h2",
+      "text": "Career & education"
+    },
+    {
+      "tag": "p",
+      "text": "I completed my PhD in machine learning and neuroimaging at The University of Queensland in 2024, supervised by Professor David Reutens and Associate Professor Viktor Vegh. My doctoral research focused on MRI and machine learning in epilepsy."
+    },
+    {
+      "tag": "p",
+      "text": "My previous research appointments include QIMR Berghofer’s Cerebellum & Neurodegeneration Research Group, UQ’s Centre for Advanced Imaging, and a visiting research role with RBWH Neurology. Earlier research experience at IIIT Sri City and the University of Hyderabad established my foundations in machine learning and feature selection."
+    },
+    {
+      "tag": "p",
+      "text": "Education: PhD, The University of Queensland (2024); M.Tech in Information Technology, University of Hyderabad (2016); MCA (2013) and BCA (2010), West Bengal University of Technology."
+    },
+    {
+      "tag": "h2",
+      "text": "Selected recognition & service"
+    },
+    {
+      "tag": "p",
+      "text": "PReMI–Springer Student Award (2017) · MICCAI Student Participation Award (2021) · UQ HDR travel support to attend AES (2023)."
+    },
+    {
+      "tag": "p",
+      "text": "Academic service includes reviewing for ML4H and programme committee contributions to the ICCV CVAMD workshop."
+    },
+    {
+      "tag": "h2",
+      "text": "CV & contact"
+    },
+    {
+      "tag": "p",
+      "text": "For a current academic CV, collaboration enquiries or supervision discussions, contact soumen.ghosh@uq.edu.au."
+    },
+    {
+      "tag": "p",
+      "text": "Google Scholar · LinkedIn · GitHub · ORCID"
+    }
+  ],
+  "teaching": [
+    {
+      "tag": "p",
+      "text": "I teach across machine learning, data science and mathematical foundations, and supervise student research in medical image analysis. My approach connects conceptual understanding with reproducible experiments, careful evaluation and clear scientific communication."
+    },
+    {
+      "tag": "h2",
+      "text": "Academic teaching"
+    },
+    {
+      "tag": "p",
+      "text": "The University of Queensland\nTeaching and tutoring in DATA7001, COMP3820 and ENGG7811, including four semesters as Head Tutor for DATA7001."
+    },
+    {
+      "tag": "p",
+      "text": "James Cook University, Brisbane — previous appointment\nSessional Lecturer in MA2011 Discrete Mathematics."
+    },
+    {
+      "tag": "p",
+      "text": "Kaplan Business School\nCasual teaching in STAM4000."
+    },
+    {
+      "tag": "p",
+      "text": "IIIT Sri City and University of Hyderabad\nEarlier teaching support in deep learning, machine learning, statistics, discrete mathematics, probability and R programming."
+    },
+    {
+      "tag": "h2",
+      "text": "Research supervision"
+    },
+    {
+      "tag": "p",
+      "text": "I supervise postgraduate and undergraduate research projects in medical imaging AI. Current supervision includes B.Tech Computer Science students developing a shared brain MRI lesion segmentation pipeline."
+    },
+    {
+      "tag": "p",
+      "text": "Projects emphasise data quality, preprocessing, reproducible training, meaningful baselines, lesion-level evaluation and failure analysis."
+    },
+    {
+      "tag": "h2",
+      "text": "Potential project areas"
+    },
+    {
+      "tag": "ul",
+      "text": "Brain MRI lesion detection and segmentation\n\nStructural and diffusion MRI biomarkers\n\nQuantitative thoracic imaging\n\nRobustness and clinical evaluation of imaging AI"
+    },
+    {
+      "tag": "h2",
+      "text": "Student enquiries"
+    },
+    {
+      "tag": "p",
+      "text": "Students interested in research projects, internships or remotely supervised work are welcome to contact me with a brief description of their interests and experience."
+    },
+    {
+      "tag": "p",
+      "text": "soumen.ghosh@uq.edu.au"
+    }
+  ],
+  "talks": [
+    {
+      "tag": "h2",
+      "text": "Latest news"
+    },
+    {
+      "tag": "p",
+      "text": "September 2026 · MICAD paper accepted\nCRIL-U-Net: Compact Ratio-Interaction Learning for Focal Cortical Dysplasia Segmentation from T1w and FLAIR MRI has been accepted at MICAD 2026. The conference is scheduled for 22–24 October 2026."
+    },
+    {
+      "tag": "p",
+      "text": "September 2026 · Adjunct Lecturer appointment\nI have joined Charles Darwin University as an Adjunct Lecturer."
+    },
+    {
+      "tag": "p",
+      "text": "March 2026 · I-MED Radiology Network\nI joined I-MED as a Senior Researcher, with a focus on clinical AI evaluation, quantitative imaging and occupational lung disease."
+    },
+    {
+      "tag": "h2",
+      "text": "Selected talks & conference contributions"
+    },
+    {
+      "tag": "p",
+      "text": "2026 · Jobs Outside the Bubble — invited panellist\nEMCR Brain Science Network webinar. Invited to share my experience transitioning from academia to industry, including moving into my role at I-MED Radiology Network and applying academic research skills in an industry setting."
+    },
+    {
+      "tag": "p",
+      "text": "2026 · ISMRM Annual Meeting\nDeep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI — accepted conference abstract."
+    },
+    {
+      "tag": "p",
+      "text": "2025 · OHBM, Brisbane\nEvaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance — poster."
+    },
+    {
+      "tag": "p",
+      "text": "2024 · OHBM, Seoul\nUnsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy — poster."
+    },
+    {
+      "tag": "p",
+      "text": "18 April 2024 · UQCCR / RBWH seminar series\nInvited talk on machine learning for seizure recurrence prediction using clinical MRI and clinical information."
+    },
+    {
+      "tag": "p",
+      "text": "December 2023 · American Epilepsy Society, Orlando\nSeizure Recurrence Prediction from MRI and Clinical Information Using Novel Brain Features for Machine Learning — platform presentation."
+    },
+    {
+      "tag": "p",
+      "text": "September 2020 · ICRACS, Anurag University\nInvited talk: Machine Learning Approaches in the Diagnosis of Patients with Focal Epilepsy."
+    },
+    {
+      "tag": "p",
+      "text": "December 2017 · PReMI, ISI Kolkata\nConference presentation on fuzzy-rough feature selection; recipient of the PReMI–Springer Student Award."
+    },
+    {
+      "tag": "h2",
+      "text": "Speaking enquiries"
+    },
+    {
+      "tag": "p",
+      "text": "For seminars on medical imaging AI, neuroimaging or clinical evaluation: soumen.ghosh@uq.edu.au."
+    }
+  ]
+}
