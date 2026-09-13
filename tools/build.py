@@ -50,6 +50,7 @@ for i,b in enumerate(data['publications']):
  if i in refs:
   label,url=refs[i];details=[s.replace(label+'.','').strip() for s in details];source=link(label+' ↗',url,'text-link')
  else:source=''
+ if b.get('source_url'):source=link(b.get('source_label','Source')+' ↗',b['source_url'],'text-link')
  pubs+=f'<article class="publication" data-category="{esc(category,quote=True)}"><p class="pub-type">{esc(category)}</p><h2>{esc(title)}</h2>'+''.join('<p>'+esc(s)+'</p>' for s in details if s)+source+'</article>';count+=1
 cats=['Recent papers & preprints','Journal articles','Published conference papers','Conference Abstracts']
 filters='<div class="filters"><label>Search publications<input id="publication-search" type="search" placeholder="Title, author or year…"></label><label>Publication type<select id="publication-type"><option value="">All outputs</option>'+''.join(f'<option>{esc(c)}</option>' for c in cats)+'</select></label></div>'
