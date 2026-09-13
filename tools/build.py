@@ -51,7 +51,7 @@ for i,b in enumerate(data['publications']):
   label,url=refs[i];details=[s.replace(label+'.','').strip() for s in details];source=link(label+' ↗',url,'text-link')
  else:source=''
  pubs+=f'<article class="publication" data-category="{esc(category,quote=True)}"><p class="pub-type">{esc(category)}</p><h2>{esc(title)}</h2>'+''.join('<p>'+esc(s)+'</p>' for s in details if s)+source+'</article>';count+=1
-cats=['Recent papers & preprints','Journal articles','Published conference papers','Selected conference abstracts']
+cats=['Recent papers & preprints','Journal articles','Published conference papers','Conference Abstracts']
 filters='<div class="filters"><label>Search publications<input id="publication-search" type="search" placeholder="Title, author or year…"></label><label>Publication type<select id="publication-type"><option value="">All outputs</option>'+''.join(f'<option>{esc(c)}</option>' for c in cats)+'</select></label></div>'
 page('publications.html','Publications','Selected papers, preprints and conference abstracts, with authors and source links.',heading('Publications','Research outputs.','Selected publications in medical imaging and machine learning. Browse the broader record on '+link('Google Scholar',profiles['Google Scholar'])+'.')+filters+f'<p id="result-count" role="status">{count} selected outputs</p><div class="publications">'+pubs+'</div><p id="no-results" hidden>No matching publications. Try another title, author or year.</p>')
 page('teaching.html','Teaching & Supervision','Teaching experience and research supervision in medical imaging AI.',heading('Teaching & supervision','Learning through research.')+'<div class="prose standalone">'+blocks(data['teaching'])+'</div>')
