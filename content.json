@@ -100,19 +100,35 @@
     },
     {
       "tag": "h3",
-      "text": "Epilepsy and focal cortical dysplasia"
+      "text": "Epilepsy: lesion detection and segmentation"
     },
     {
       "tag": "p",
-      "text": "Developing MRI-based approaches to lesion detection and segmentation, including multimodal T1w/FLAIR learning and unsupervised analysis of ultra-high-field MRI. The NeuroMorphix programme investigates brain asymmetry and clinical information for seizure recurrence prediction after a first unprovoked seizure."
+      "text": "My research develops MRI and machine learning methods to identify and delineate subtle brain abnormalities associated with focal epilepsy, particularly focal cortical dysplasia. This includes unsupervised lesion detection using ultra-high-field 7T MRI and multimodal segmentation using T1-weighted and FLAIR images. I focus on detecting small lesions, understanding model failures and evaluating performance across imaging settings."
     },
     {
       "tag": "h3",
-      "text": "Neurodegeneration and diffusion MRI"
+      "text": "Predicting seizure recurrence after a first seizure"
     },
     {
       "tag": "p",
-      "text": "Automated cerebellar peduncle segmentation and quantitative diffusion MRI in Friedreich’s ataxia, alongside morphometric and network-based analyses of Alzheimer’s disease. This work aims to make imaging measurements more reproducible and sensitive to disease-related variation."
+      "text": "A first unprovoked seizure raises an important clinical question: will another seizure occur? My research investigates whether structural MRI, combined with clinical information, can help estimate this risk. Through NeuroMorphix, I study brain asymmetry and other imaging features, with evaluation in an independent patient cohort to assess how well predictions generalise."
+    },
+    {
+      "tag": "h3",
+      "text": "Alzheimer’s disease: structural MRI biomarkers"
+    },
+    {
+      "tag": "p",
+      "text": "My research investigates how structural MRI can characterise brain changes across normal cognition, mild cognitive impairment and Alzheimer’s disease. Using cortical and subcortical measurements, I examine regional anatomical differences and networks that describe similarities between brain regions. This work combines machine learning with harmonisation across imaging sites to evaluate potential biomarkers for distinguishing clinical groups."
+    },
+    {
+      "tag": "h3",
+      "text": "Friedreich’s ataxia: diffusion MRI and cerebellar pathways"
+    },
+    {
+      "tag": "p",
+      "text": "My research uses diffusion MRI and deep learning to study the cerebellar pathways affected by Friedreich’s ataxia. I develop automated methods to segment the cerebellar peduncles and extract quantitative measurements of white matter microstructure. The work evaluates segmentation accuracy and consistency across imaging sites, with the aim of supporting reproducible imaging biomarkers of neurological disease."
     },
     {
       "tag": "h2",
