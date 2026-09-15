@@ -1,6 +1,6 @@
 # Soumen Ghosh - academic website
 
-A lightweight, six-page website for GitHub Pages. Generated HTML is included, so deployment requires no build service, packages or theme dependencies.
+A lightweight, seven-page website for GitHub Pages. Generated HTML is included, so deployment requires no build service, packages or theme dependencies.
 
 ## Publish
 
@@ -13,7 +13,7 @@ Keep the Google Site online until this address is verified, then add a prominent
 
 ## Edit
 
-- `content.json`: existing research, publication, teaching, news and biography content.
+- `content.json`: existing research, publication, teaching, news, biography and consulting content.
 - `tools/build.py`: shared page layout, homepage and publication source links.
 - `assets/site.css`: responsive design.
 - `assets/site.js`: mobile menu and publication filtering.
