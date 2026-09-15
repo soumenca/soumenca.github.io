@@ -354,46 +354,70 @@
     }
   ],
   "consulting": {
-    "intro": "I welcome enquiries from researchers, industry teams and educators looking for support with medical imaging AI, clinical AI evaluation and practical training.",
-    "home_summary": "Research consulting, industry support and tailored teaching in medical imaging and clinical AI. Explore ways to work with me and register your interest in my Clinical AI course, currently in development.",
+    "intro": "I help research and industry teams plan imaging studies, evaluate AI models and build the skills to interpret results. Bring a specific question, an existing project or a training need.",
+    "home_summary": "Plan an imaging study, evaluate an AI model or build your team’s skills. Explore research consulting, industry support and tailored training in medical imaging and clinical AI.",
     "offers": [
       {
-        "title": "Research consulting",
-        "audience": "For researchers and research teams",
-        "description": "Support with turning an imaging research question into a clear analysis and evaluation plan.",
+        "title": "Plan & analyse your study",
+        "audience": "Research consulting",
+        "description": "For teams shaping a research question or needing specialist support with MRI and CT analysis.",
         "topics": [
           "Study design and analysis planning",
-          "MRI and CT analysis, segmentation and quantitative biomarkers",
-          "Reproducible workflows and interpretation of results"
-        ]
+          "Segmentation and quantitative imaging",
+          "Reproducible analysis and interpretation"
+        ],
+        "deliverable": "An analysis plan, documented workflow or results report, depending on the agreed scope.",
+        "cta": "Discuss a research project",
+        "subject": "Research consulting enquiry"
       },
       {
-        "title": "Industry support",
-        "audience": "For teams developing or evaluating imaging AI",
-        "description": "Research and evaluation support to understand model performance, limitations and evidence needs.",
+        "title": "Understand model performance",
+        "audience": "Industry consulting",
+        "description": "For teams that need a clearer view of how an imaging AI model performs, where it fails and what to evaluate next.",
         "topics": [
-          "Imaging data quality and evaluation planning",
-          "Model validation, error analysis and performance reporting",
-          "Assessment across datasets and imaging sites"
-        ]
+          "Evaluation design and data quality review",
+          "Validation across datasets and imaging sites",
+          "Error analysis and performance reporting"
+        ],
+        "deliverable": "An evaluation plan or performance review with limitations and recommended next steps.",
+        "cta": "Discuss an AI evaluation",
+        "subject": "Clinical AI evaluation enquiry"
       },
       {
-        "title": "Teaching & workshops",
-        "audience": "For educators and teams building clinical AI skills",
-        "description": "Enquiries are welcome for guest teaching, practical workshops and training shaped around your audience and learning goals.",
+        "title": "Build your team’s AI skills",
+        "audience": "Teaching & workshops",
+        "description": "For organisations and educators seeking practical training matched to their audience and learning goals.",
         "topics": [
           "Medical imaging and machine learning foundations",
           "Critical appraisal of clinical AI studies",
-          "Hands-on imaging analysis and reproducible workflows"
-        ]
+          "Hands-on analysis and reproducible workflows"
+        ],
+        "deliverable": "A tailored session or workshop, supported by learning materials and practical examples.",
+        "cta": "Discuss team training",
+        "subject": "Teaching and workshop enquiry"
       }
     ],
     "course": {
       "title": "Clinical AI course",
       "status": "In development",
-      "description": "I am developing a course focused on understanding, evaluating and applying AI in clinical research, drawing on examples from medical imaging.",
-      "detail": "The syllabus and delivery format are being developed. If you are interested, tell me about your background and what you would like to learn."
+      "description": "A course in development on understanding, evaluating and applying AI in clinical research, with examples from medical imaging.",
+      "detail": "Interested for yourself or your team? Share your background and learning priorities to help shape the course. The syllabus, format and launch date are not yet finalised."
     },
-    "contact_intro": "Tell me about your research question, project or training needs, the support you are looking for, and your preferred timeframe. For teaching enquiries, please include the intended audience and learning goals."
+    "contact_intro": "A short outline is enough to begin: your goal, the support you need, and your preferred timeframe. I’ll use it to discuss whether the project is a good fit.",
+    "headline": "Practical expertise for your clinical AI project.",
+    "process": [
+      {
+        "title": "Share your brief",
+        "text": "Describe your goal, current stage and the decision or learning need you want to address."
+      },
+      {
+        "title": "Agree the scope",
+        "text": "We discuss fit, deliverables, timeline and fees before work begins."
+      },
+      {
+        "title": "Review & hand over",
+        "text": "Receive the agreed analysis, review or training, with clear explanations and next steps."
+      }
+    ]
   }
 }
