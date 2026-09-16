@@ -399,9 +399,9 @@
     ],
     "course": {
       "title": "Clinical AI course",
-      "status": "In development",
-      "description": "A course in development on understanding, evaluating and applying AI in clinical research, with examples from medical imaging.",
-      "detail": "Interested for yourself or your team? Share your background and learning priorities to help shape the course. The syllabus, format and launch date are not yet finalised."
+      "status": "Available to deliver",
+      "description": "I have developed this course to help participants understand, evaluate and apply AI in clinical research, using examples from medical imaging.",
+      "detail": "Available to deliver to your team or organisation. Get in touch to discuss your audience, learning priorities, preferred format and dates."
     },
     "contact_intro": "A short outline is enough to begin: your goal, the support you need, and your preferred timeframe. I’ll use it to discuss whether the project is a good fit.",
     "headline": "Practical expertise for your clinical AI project.",
