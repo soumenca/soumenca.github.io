@@ -46,7 +46,7 @@ for b in rs[1:]:
   idx+=1;content+=f'<section class="research-area" aria-labelledby="theme-{idx}"><h3 id="theme-{idx}">{esc(b["text"])}</h3>'
  elif b['tag']=='project':
   outputs='<ul class="project-outputs" aria-label="Related research outputs">'+''.join('<li>'+link(o['label']+' ↗',o['url'])+'</li>' for o in b['outputs'])+'</ul>' if b['outputs'] else ''
-  content+=f'<article class="research-project"><h4>{esc(b["title"])}</h4><div><p class="project-question">{esc(b["question"])}</p><p class="project-contribution"><strong>My contribution:</strong> {esc(b["contribution"])}</p>{outputs}</div></article>'
+  content+=f'<article class="research-project"><h4>{esc(b["title"])}</h4><div><p class="project-question">{esc(b["question"])}</p><p class="project-contribution">{esc(b["contribution"])}</p>{outputs}</div></article>'
 if idx:content+='</section>'
 delivery=data['research_delivery']
 capabilities=''.join(f'<article class="research-capability"><span class="capability-number" aria-hidden="true">{i:02d}</span><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></article>' for i,item in enumerate(delivery['capabilities'],1))
