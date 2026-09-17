@@ -202,7 +202,7 @@
     },
     {
       "tag": "p",
-      "text": "I am a medical imaging AI researcher based in Brisbane, Australia. My work combines machine learning, structural and diffusion MRI, and quantitative CT to investigate neurological and occupational lung disease. I am particularly interested in how robust image analysis and careful clinical evaluation can turn imaging measurements into useful evidence."
+      "text": "I am a clinical data and medical imaging AI researcher based in Brisbane, Australia. My work brings together clinical records, structural and diffusion MRI, quantitative CT and machine learning to investigate neurological disease, occupational lung disease and cancer. I work with clinical and research teams across study design, data preparation, method development and evaluation."
     },
     {
       "tag": "h2",
@@ -322,6 +322,16 @@
       "text": "Students interested in research projects, internships or remotely supervised work are welcome to contact me with a brief description of their interests and experience.",
       "link_label": "Contact details ↗",
       "link_url": "about.html#contact"
+    },
+    {
+      "tag": "h2",
+      "text": "Professional training"
+    },
+    {
+      "tag": "p",
+      "text": "I also deliver the Clinical AI course and tailored workshops for research and industry teams.",
+      "link_label": "Consulting & Training ↗",
+      "link_url": "consulting.html#course-title"
     }
   ],
   "talks": [
@@ -331,7 +341,7 @@
     },
     {
       "tag": "p",
-      "text": "September 2026 · MICAD paper accepted\nCRIL-U-Net: Compact Ratio-Interaction Learning for Focal Cortical Dysplasia Segmentation from T1w and FLAIR MRI has been accepted at MICAD 2026. The conference is scheduled for 22–24 October 2026."
+      "text": "September 2026 · MICAD paper accepted\nCRIL-U-Net: Compact Ratio-Interaction Learning for Focal Cortical Dysplasia Segmentation from T1w and FLAIR MRI has been accepted at the 7th International Conference on Medical Imaging and Computer-Aided Diagnosis (MICAD), scheduled for 22–24 October 2026 in Edinburgh, United Kingdom."
     },
     {
       "tag": "p",
@@ -351,31 +361,31 @@
     },
     {
       "tag": "p",
-      "text": "2026 · ISMRM Annual Meeting\nDeep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI — accepted conference abstract."
+      "text": "2026 · International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting & Exhibition · Cape Town, South Africa\nDeep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI — accepted conference abstract."
     },
     {
       "tag": "p",
-      "text": "2025 · OHBM, Brisbane\nEvaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance — poster."
+      "text": "2025 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Brisbane, Australia\nEvaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance — poster."
     },
     {
       "tag": "p",
-      "text": "2024 · OHBM, Seoul\nUnsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy — poster."
+      "text": "2024 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Seoul, South Korea\nUnsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy — poster."
     },
     {
       "tag": "p",
-      "text": "18 April 2024 · UQCCR / RBWH seminar series\nInvited talk on machine learning for seizure recurrence prediction using clinical MRI and clinical information."
+      "text": "18 April 2024 · The University of Queensland Centre for Clinical Research / Royal Brisbane and Women’s Hospital seminar series\nInvited talk on machine learning for seizure recurrence prediction using clinical MRI and clinical information."
     },
     {
       "tag": "p",
-      "text": "December 2023 · American Epilepsy Society, Orlando\nSeizure Recurrence Prediction from MRI and Clinical Information Using Novel Brain Features for Machine Learning — platform presentation."
+      "text": "December 2023 · American Epilepsy Society (AES) Annual Meeting · Orlando, United States\nSeizure Recurrence Prediction from MRI and Clinical Information Using Novel Brain Features for Machine Learning — platform presentation."
     },
     {
       "tag": "p",
-      "text": "September 2020 · ICRACS, Anurag University\nInvited talk: Machine Learning Approaches in the Diagnosis of Patients with Focal Epilepsy."
+      "text": "September 2020 · International Conclave on Recent Advances in Computer Science (ICRACS) · Anurag University, Hyderabad, India (online)\nInvited talk: Machine Learning Approaches in the Diagnosis of Patients with Focal Epilepsy."
     },
     {
       "tag": "p",
-      "text": "December 2017 · PReMI, ISI Kolkata\nConference presentation on fuzzy-rough feature selection; recipient of the PReMI–Springer Student Award."
+      "text": "December 2017 · International Conference on Pattern Recognition and Machine Intelligence (PReMI) · Indian Statistical Institute, Kolkata, India\nConference presentation on fuzzy-rough feature selection; recipient of the PReMI–Springer Student Award."
     },
     {
       "tag": "h2",
@@ -389,26 +399,26 @@
     }
   ],
   "consulting": {
-    "intro": "I help research and industry teams plan imaging studies, evaluate AI models and build the skills to interpret results. Bring a specific question, an existing project or a training need.",
-    "home_summary": "Plan an imaging study, evaluate an AI model or build your team’s skills. Explore research consulting, industry support and tailored training in medical imaging and clinical AI.",
+    "intro": "I help research and industry teams design studies, work with clinical and imaging data, evaluate AI models and build practical skills. Bring a specific question, an existing project or a training need.",
+    "home_summary": "Design a clinical or imaging study, evaluate an AI model or build your team’s skills. Explore research consulting, industry support and tailored Clinical AI training.",
     "offers": [
       {
-        "title": "Plan & analyse your study",
+        "title": "Design & deliver your study",
         "audience": "Research consulting",
-        "description": "For teams shaping a research question or needing specialist support with MRI and CT analysis.",
+        "description": "For teams seeking support with a clinical or imaging research project, from study planning and data workflows to analysis and reporting.",
         "topics": [
           "Study design and analysis planning",
-          "Segmentation and quantitative imaging",
-          "Reproducible analysis and interpretation"
+          "Clinical and imaging data workflows",
+          "Evaluation, interpretation and scientific reporting"
         ],
-        "deliverable": "An analysis plan, documented workflow or results report, depending on the agreed scope.",
+        "deliverable": "A study plan, documented data or analysis workflow, or research report, depending on the agreed scope.",
         "cta": "Discuss a research project",
         "subject": "Research consulting enquiry"
       },
       {
         "title": "Understand model performance",
         "audience": "Industry consulting",
-        "description": "For teams that need a clearer view of how an imaging AI model performs, where it fails and what to evaluate next.",
+        "description": "For teams that need a clearer view of how a clinical or imaging AI model performs, where it fails and what to evaluate next.",
         "topics": [
           "Evaluation design and data quality review",
           "Validation across datasets and imaging sites",
@@ -484,5 +494,11 @@
         "text": "Preparing research reports, manuscripts and conference presentations, supported by documented methods, reproducible analysis workflows and clear reporting of limitations."
       }
     ]
+  },
+  "site": {
+    "role": "Clinical data and medical imaging AI researcher",
+    "footer_summary": "Clinical Data, Medical Imaging & AI",
+    "home_title": "Soumen Ghosh | Clinical Data & Imaging AI",
+    "home_intro": "I combine clinical data, medical imaging, AI and quantitative biomarkers to investigate neurological disease, occupational lung disease and cancer."
   }
 }
