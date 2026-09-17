@@ -34,20 +34,23 @@
 /* Research capabilities and project areas. */
 .research-page .page-heading{padding:40px 0 30px;max-width:920px}
 .research-page .page-heading .lede{max-width:900px;margin-bottom:0}
-.research-delivery{padding:28px 0 32px;border-block:1px solid var(--line)}
+.research-delivery{padding:30px;background:var(--tint);border:1px solid var(--line);border-radius:8px;margin-bottom:8px}
+.delivery-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:36px;align-items:start;margin-bottom:26px}
 .research-delivery h2,.research-projects>h2{font-size:1.9rem;margin-bottom:16px}
-.delivery-intro{max-width:900px;color:var(--muted);margin-bottom:24px}
-.research-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.research-capability{background:white;border:1px solid var(--line);border-radius:4px;padding:22px}
-.research-capability h3{font-size:1.06rem;line-height:1.4;margin-bottom:12px}
-.research-capability p{font-size:.9rem;line-height:1.65;color:var(--muted);margin-bottom:0}
+.delivery-heading h2{max-width:300px;line-height:1.2;margin:0}
+.delivery-intro{color:var(--muted);font-size:.94rem;line-height:1.7;margin:0}
+.research-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.research-capability{background:white;border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:5px;padding:22px}
+.capability-number{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--tint);color:var(--teal);font-size:.76rem;font-weight:650;letter-spacing:.04em;margin-bottom:16px}
+.research-capability h3{font-size:1.07rem;line-height:1.4;margin:0 0 12px}
+.research-capability p{font-size:.9rem;line-height:1.65;color:var(--muted);margin:0}
 .research-projects{padding-top:32px}
 .research-projects>h2{margin-bottom:28px}
 .research-projects .prose h3{font-size:1.7rem;line-height:1.3;letter-spacing:-.025em;margin:40px 0 20px}
 .research-projects .prose h3:first-child{margin-top:0}
 .research-projects .prose h4{font-size:1.2rem;line-height:1.4;font-weight:600;margin:28px 0 16px}
-@media(max-width:900px){.research-capabilities{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.research-page .page-heading{padding:30px 0 24px}.research-capabilities{grid-template-columns:1fr;gap:14px}.research-capability{padding:20px}.research-delivery h2,.research-projects>h2{font-size:1.65rem}}
+@media(max-width:900px){.delivery-heading{grid-template-columns:1fr;gap:16px}.delivery-heading h2{max-width:none}.research-capabilities{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.research-page .page-heading{padding:30px 0 24px}.research-delivery{padding:20px 16px}.research-capabilities{grid-template-columns:1fr;gap:14px}.research-capability{padding:20px}.capability-number{margin-bottom:12px}.research-delivery h2,.research-projects>h2{font-size:1.65rem}}
 
 /* Client-focused consulting page. */
 .consulting-hero{display:grid;grid-template-columns:minmax(0,1fr) 244px;align-items:center;gap:64px;padding:44px 0 36px;border-bottom:1px solid var(--line)}

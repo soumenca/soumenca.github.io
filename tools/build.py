@@ -1,9 +1,10 @@
 from pathlib import Path
-import json,html,re
+import json,html,re,hashlib
 from urllib.parse import urlencode, quote
 root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'content.json').read_text())
 esc=html.escape
+css_version=hashlib.sha256((root/'assets/site.css').read_bytes()).hexdigest()[:12]
 nav=[('index.html','Home'),('research.html','Research'),('publications.html','Publications'),('teaching.html','Teaching & Supervision'),('consulting.html','Consulting & Training'),('news.html','Talks & News'),('about.html','About / CV')]
 profiles={'Google Scholar':'https://scholar.google.co.in/citations?user=yuB4f7IAAAAJ&hl=en','ORCID':'https://orcid.org/0000-0002-8360-5309','LinkedIn':'https://www.linkedin.com/in/soumen-ghosh-aaa58ba4/','GitHub':'https://github.com/soumenca'}
 def link(label,url,cls=''):
@@ -27,7 +28,7 @@ def page(name,title,desc,body,home=False):
  cv_footer='' if home else '<a href="assets/Soumen_Ghosh_CV.pdf">Academic CV (PDF)</a>'
  body_class=' class="home"' if home else ''
  fulltitle='Soumen Ghosh | Medical Imaging AI' if home else title+' | Soumen Ghosh'
- doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(fulltitle)}</title><meta name="description" content="{esc(desc,quote=True)}"><meta name="theme-color" content="#123c43"><meta property="og:title" content="{esc(fulltitle,quote=True)}"><meta property="og:description" content="{esc(desc,quote=True)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head><body{body_class}><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="nav-wrap"><a class="wordmark" href="index.html">Soumen Ghosh<span>Researcher · Brisbane</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Main navigation">{navigation}</nav></div></header><main id="main">{body}</main><footer><div class="footer-inner"><div><a class="wordmark" href="index.html">Soumen Ghosh, PhD</a><p>Medical Imaging AI &amp; Quantitative Imaging</p><a href="mailto:soumen.ghosh@uq.edu.au">soumen.ghosh@uq.edu.au</a></div><div class="footer-links">{profile}{cv_footer}</div></div><div class="footer-bottom">Brisbane, Australia<span>Updated September 2026</span></div></footer></body></html>'''
+ doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(fulltitle)}</title><meta name="description" content="{esc(desc,quote=True)}"><meta name="theme-color" content="#123c43"><meta property="og:title" content="{esc(fulltitle,quote=True)}"><meta property="og:description" content="{esc(desc,quote=True)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css?v={css_version}"><script src="assets/site.js" defer></script></head><body{body_class}><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="nav-wrap"><a class="wordmark" href="index.html">Soumen Ghosh<span>Researcher · Brisbane</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Main navigation">{navigation}</nav></div></header><main id="main">{body}</main><footer><div class="footer-inner"><div><a class="wordmark" href="index.html">Soumen Ghosh, PhD</a><p>Medical Imaging AI &amp; Quantitative Imaging</p><a href="mailto:soumen.ghosh@uq.edu.au">soumen.ghosh@uq.edu.au</a></div><div class="footer-links">{profile}{cv_footer}</div></div><div class="footer-bottom">Brisbane, Australia<span>Updated September 2026</span></div></footer></body></html>'''
  (root/name).write_text(doc)
 
 def heading(kicker,title,intro=''):
@@ -42,8 +43,8 @@ for b in rs[1:]:
  elif b['tag']=='h3':content+=f'<h4>{esc(b["text"])}</h4>'
  else:content+=blocks([b])
 delivery=data['research_delivery']
-capabilities=''.join(f'<article class="research-capability"><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></article>' for item in delivery['capabilities'])
-delivery_section=f'<section class="research-delivery" aria-labelledby="delivery-title"><h2 id="delivery-title">{esc(delivery["title"])}</h2><p class="delivery-intro">{esc(delivery["intro"])}</p><div class="research-capabilities">{capabilities}</div></section>'
+capabilities=''.join(f'<article class="research-capability"><span class="capability-number" aria-hidden="true">{i:02d}</span><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></article>' for i,item in enumerate(delivery['capabilities'],1))
+delivery_section=f'<section class="research-delivery" aria-labelledby="delivery-title"><div class="delivery-heading"><h2 id="delivery-title">{esc(delivery["title"])}</h2><p class="delivery-intro">{esc(delivery["intro"])}</p></div><div class="research-capabilities">{capabilities}</div></section>'
 projects='<section class="research-projects" aria-labelledby="projects-title"><h2 id="projects-title">Research Areas and Projects</h2><div class="reading-layout"><aside class="section-nav" aria-label="Research themes">'+''.join(f'<a href="#theme-{i}">{esc(t)}</a>' for i,(_,t,_) in enumerate(research_cards,1))+'</aside><div class="prose">'+content+'</div></div></section>'
 page('research.html','Research','Clinical data, medical imaging and AI research: study design, data collection, method development, validation and publication.', '<div class="research-page">'+heading('Clinical data · Imaging · AI','Research',esc(intro))+delivery_section+projects+'</div>')
 # Bibliographic links remain attached to the corresponding paper, including repeated labels.
