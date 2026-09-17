@@ -9,8 +9,9 @@ css_version=hashlib.sha256((root/'assets/site.css').read_bytes()).hexdigest()[:1
 js_version=hashlib.sha256((root/'assets/site.js').read_bytes()).hexdigest()[:12]
 nav=[('index.html','Home'),('research.html','Research'),('publications.html','Publications'),('teaching.html','Teaching & Supervision'),('consulting.html','Consulting & Training'),('news.html','Talks & News'),('about.html','About')]
 profiles={'Google Scholar':'https://scholar.google.co.in/citations?user=yuB4f7IAAAAJ&hl=en','ORCID':'https://orcid.org/0000-0002-8360-5309','LinkedIn':'https://www.linkedin.com/in/soumen-ghosh-aaa58ba4/','GitHub':'https://github.com/soumenca'}
-def link(label,url,cls=''):
- return f'<a class="{cls}" href="{esc(url,quote=True)}">{esc(label)}</a>'
+def link(label,url,cls='',new_tab=False):
+ extra=' target="_blank" rel="noopener noreferrer" aria-label="'+esc(label+' (opens in a new tab)',quote=True)+'"' if new_tab else ''
+ return f'<a class="{cls}" href="{esc(url,quote=True)}"{extra}>{esc(label)}</a>'
 def blocks(bs):
  out=''
  for b in bs:
@@ -63,7 +64,7 @@ for i,b in enumerate(data['publications']):
  if i in refs:
   label,url=refs[i];details=[s.replace(label+'.','').strip() for s in details];source=link(label+' ↗',url,'text-link')
  else:source=''
- if b.get('source_url'):source=link(b.get('source_label','Source')+' ↗',b['source_url'],'text-link')
+ if b.get('source_url'):source=link(b.get('source_label','Source')+' ↗',b['source_url'],'text-link',new_tab=category=='Conference Abstracts')
  pub_id=' id="'+esc(b['id'],quote=True)+'"' if b.get('id') else ''
  pubs+=f'<article class="publication"{pub_id} data-category="{esc(category,quote=True)}"><p class="pub-type">{esc(category)}</p><h2>{esc(title)}</h2>'+''.join('<p>'+esc(s)+'</p>' for s in details if s)+source+'</article>';count+=1
 cats=['Recent papers & preprints','Journal articles','Published conference papers','Conference Abstracts']
