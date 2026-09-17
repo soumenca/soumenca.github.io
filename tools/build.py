@@ -69,7 +69,27 @@ for i,b in enumerate(data['publications']):
 cats=['Recent papers & preprints','Journal articles','Published conference papers','Conference Abstracts']
 filters='<div class="filters"><label>Search publications<input id="publication-search" type="search" placeholder="Title, author or year…"></label><label>Publication type<select id="publication-type"><option value="">All outputs</option>'+''.join(f'<option>{esc(c)}</option>' for c in cats)+'</select></label></div>'
 page('publications.html','Publications','Selected papers, preprints and conference abstracts, with authors and source links.',heading('Publications','Research outputs','Selected publications in medical imaging and machine learning. Browse the broader record on '+link('Google Scholar',profiles['Google Scholar'])+'.')+filters+f'<p id="result-count" role="status">{count} selected outputs</p><div class="publications">'+pubs+'</div><p id="no-results" hidden>No matching publications. Try another title, author or year.</p>')
-page('teaching.html','Teaching & Supervision','Teaching experience and research supervision in medical imaging AI.',heading('Teaching &amp; Supervision','Teaching &amp; Supervision')+'<div class="prose standalone">'+blocks(data['teaching'])+'</div>')
+# Keep related teaching content together instead of rendering every heading as a peer.
+teaching_sections={}
+for b in data['teaching'][1:]:
+ if b['tag']=='h2':
+  teaching_section=b['text'];teaching_sections[teaching_section]=[]
+ else:teaching_sections[teaching_section].append(b)
+appointments=''
+for b in teaching_sections['Academic teaching']:
+ institution,description=b['text'].split('\n',1)
+ institution,separator,status=institution.partition(' — ')
+ status_html=f'<p class="teaching-appointment-note">{esc(status.capitalize())}</p>' if separator else ''
+ appointments+=f'<article class="teaching-appointment"><div><h3>{esc(institution)}</h3>{status_html}</div><p>{esc(description)}</p></article>'
+student_enquiry=teaching_sections['Student enquiries'][0]
+training=teaching_sections['Professional training'][0]
+teaching=f'''<div class="teaching-page">
+{heading('Teaching · Supervision · Training','Teaching &amp; Supervision',esc(data['teaching'][0]['text']))}
+<section class="academic-teaching" aria-labelledby="academic-teaching-title"><h2 id="academic-teaching-title">Academic teaching</h2><div class="teaching-appointments">{appointments}</div></section>
+<section class="supervision-panel" aria-labelledby="supervision-title"><h2 id="supervision-title">Research supervision</h2><div class="supervision-grid"><div class="supervision-description">{blocks(teaching_sections['Research supervision'])}</div><div class="supervision-projects"><h3>Potential project areas</h3>{blocks(teaching_sections['Potential project areas'])}</div></div><div class="student-enquiry"><div><h3>Student enquiries</h3><p>{esc(student_enquiry['text'])}</p></div>{link('Discuss a student project ↗',student_enquiry['link_url'],'text-link')}</div></section>
+<section class="teaching-training" aria-labelledby="training-title"><div><h2 id="training-title">Professional training</h2><p>{esc(training['text'])}</p></div>{link('Explore Clinical AI training ↗',training['link_url'],'text-link')}</section>
+</div>'''
+page('teaching.html','Teaching & Supervision','Teaching experience, undergraduate and postgraduate research supervision, and professional Clinical AI training.',teaching)
 page('news.html','Talks & News','Academic appointments, research updates, invited talks and conference contributions.',heading('Talks &amp; News','Talks &amp; News','Research updates, conference contributions and invited talks.')+'<div class="prose standalone news-prose">'+blocks(data['talks'])+'</div>')
 page('about.html','About','Biography, academic appointments, education and downloadable CV for Soumen Ghosh.',heading('About','Soumen Ghosh, PhD',esc(site['role'])+' based in Brisbane, Australia.')+'<div class="prose standalone">'+blocks(data['about'])+'</div>')
 
