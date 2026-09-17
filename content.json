@@ -58,15 +58,18 @@
     },
     {
       "tag": "p",
-      "text": "Deep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI\nSoumen Ghosh, Susmita Saha, Diogo Shiraishi, Thiago Rezende, Ian Harding.\n2026 · International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting & Exhibition · Cape Town, South Africa · Conference abstract."
+      "text": "Deep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI\nSoumen Ghosh, Susmita Saha, Diogo Shiraishi, Thiago Rezende, Ian Harding.\n2026 · International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting & Exhibition · Cape Town, South Africa · Conference abstract.",
+      "id": "cerebellar-peduncles-ismrm-2026"
     },
     {
       "tag": "p",
-      "text": "Evaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance\nSoumen Ghosh, Susmita Saha, Ian Harding.\n2025 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Brisbane, Australia · Conference abstract."
+      "text": "Evaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance\nSoumen Ghosh, Susmita Saha, Ian Harding.\n2025 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Brisbane, Australia · Conference abstract.",
+      "id": "cerebellar-peduncles-ohbm-2025"
     },
     {
       "tag": "p",
-      "text": "Unsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy\nSoumen Ghosh, Viktor Vegh, John Phamnguyen, Shahrzad Moinian, David Reutens.\n2024 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Seoul, South Korea · Conference abstract."
+      "text": "Unsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy\nSoumen Ghosh, Viktor Vegh, John Phamnguyen, Shahrzad Moinian, David Reutens.\n2024 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Seoul, South Korea · Conference abstract.",
+      "id": "lesion-detection-ohbm-2024"
     },
     {
       "tag": "p",
@@ -92,63 +95,104 @@
   "research": [
     {
       "tag": "p",
-      "text": "My research integrates clinical data, medical imaging, artificial intelligence and quantitative biomarkers to investigate neurological and occupational lung disease. Working with clinical and research teams, I connect clinically meaningful questions with study design, data collection, analysis and validation to generate evidence for diagnosis, disease characterisation and clinical decision-making."
+      "text": "My research integrates clinical data, medical imaging, artificial intelligence and quantitative biomarkers to investigate neurological disease, occupational lung disease and cancer. Working with clinical and research teams, I connect clinically meaningful questions with study design, data collection, analysis and validation to generate evidence for diagnosis, disease characterisation and clinical decision-making."
     },
     {
       "tag": "h2",
       "text": "Neuroimaging & neurological disease"
     },
     {
-      "tag": "h3",
-      "text": "Epilepsy: lesion detection and segmentation"
+      "tag": "project",
+      "title": "Epilepsy: lesion detection and segmentation",
+      "question": "How can MRI and machine learning help detect and delineate subtle brain abnormalities associated with focal epilepsy?",
+      "contribution": "I develop unsupervised lesion-detection methods for 7T MRI and multimodal segmentation methods using T1-weighted and FLAIR images, with a focus on focal cortical dysplasia, small lesions and model failures.",
+      "outputs": [
+        {
+          "label": "CRIL-U-Net preprint",
+          "url": "https://arxiv.org/abs/2608.03185"
+        },
+        {
+          "label": "MRI benchmarking preprint",
+          "url": "https://arxiv.org/abs/2607.15605"
+        },
+        {
+          "label": "OHBM 2024 abstract",
+          "url": "publications.html#lesion-detection-ohbm-2024"
+        }
+      ]
     },
     {
-      "tag": "p",
-      "text": "My research develops MRI and machine learning methods to identify and delineate subtle brain abnormalities associated with focal epilepsy, particularly focal cortical dysplasia. This includes unsupervised lesion detection using ultra-high-field 7T MRI and multimodal segmentation using T1-weighted and FLAIR images. I focus on detecting small lesions, understanding model failures and evaluating performance across imaging settings."
+      "tag": "project",
+      "title": "Predicting seizure recurrence after a first seizure",
+      "question": "Can clinical information and MRI-derived brain measurements help estimate the likelihood of another seizure?",
+      "contribution": "I develop imaging features and machine-learning methods, integrate clinical information, and evaluate predictive performance. This includes NeuroMorphix, which captures brain asymmetry from structural MRI.",
+      "outputs": [
+        {
+          "label": "NeuroMorphix preprint",
+          "url": "https://arxiv.org/abs/2404.10290"
+        },
+        {
+          "label": "AES 2023 abstract",
+          "url": "https://aesnet.org/abstractslisting/seizure-recurrence-prediction-from-mri-and-clinical-information-using-novel-brain-features-for-machine-learning"
+        }
+      ]
     },
     {
-      "tag": "h3",
-      "text": "Predicting seizure recurrence after a first seizure"
+      "tag": "project",
+      "title": "Alzheimer’s disease: structural MRI biomarkers",
+      "question": "How can structural MRI characterise brain changes across normal cognition, mild cognitive impairment and Alzheimer’s disease?",
+      "contribution": "I analyse cortical and subcortical measurements and networks describing similarities between brain regions, combining machine learning with harmonisation across imaging sites to investigate potential biomarkers.",
+      "outputs": []
     },
     {
-      "tag": "p",
-      "text": "A first unprovoked seizure raises an important clinical question: will another seizure occur? My research investigates whether structural MRI, combined with clinical information, can help estimate this risk. Through NeuroMorphix, I study brain asymmetry and other imaging features, with evaluation in an independent patient cohort to assess how well predictions generalise."
-    },
-    {
-      "tag": "h3",
-      "text": "Alzheimer’s disease: structural MRI biomarkers"
-    },
-    {
-      "tag": "p",
-      "text": "My research investigates how structural MRI can characterise brain changes across normal cognition, mild cognitive impairment and Alzheimer’s disease. Using cortical and subcortical measurements, I examine regional anatomical differences and networks that describe similarities between brain regions. This work combines machine learning with harmonisation across imaging sites to evaluate potential biomarkers for distinguishing clinical groups."
-    },
-    {
-      "tag": "h3",
-      "text": "Friedreich’s ataxia: diffusion MRI and cerebellar pathways"
-    },
-    {
-      "tag": "p",
-      "text": "My research uses diffusion MRI and deep learning to study the cerebellar pathways affected by Friedreich’s ataxia. I develop automated methods to segment the cerebellar peduncles and extract quantitative measurements of white matter microstructure. The work evaluates segmentation accuracy and consistency across imaging sites, with the aim of supporting reproducible imaging biomarkers of neurological disease."
+      "tag": "project",
+      "title": "Friedreich’s ataxia: diffusion MRI and cerebellar pathways",
+      "question": "How can diffusion MRI quantify changes in the cerebellar pathways affected by Friedreich’s ataxia?",
+      "contribution": "I develop automated methods to segment the cerebellar peduncles and extract measurements of white matter microstructure, evaluating segmentation accuracy and consistency across imaging sites.",
+      "outputs": [
+        {
+          "label": "ISMRM 2026 abstract",
+          "url": "publications.html#cerebellar-peduncles-ismrm-2026"
+        },
+        {
+          "label": "OHBM 2025 abstract",
+          "url": "publications.html#cerebellar-peduncles-ohbm-2025"
+        }
+      ]
     },
     {
       "tag": "h2",
       "text": "Occupational lung disease & thoracic imaging"
     },
     {
-      "tag": "h3",
-      "text": "Imaging in dust-exposed workers"
+      "tag": "project",
+      "title": "Chest X-ray and CT assessment in dust-exposed workers",
+      "question": "How closely does chest X-ray assessment agree with high-resolution CT (HRCT), and how well does it identify abnormalities in dust-exposed workers?",
+      "contribution": "At I-MED Radiology Network, I lead research delivery and analysis in occupational lung imaging. ExactDust examines agreement and diagnostic performance between chest radiography and HRCT, alongside related work on quantitative assessment of structural lung abnormalities.",
+      "outputs": []
     },
     {
-      "tag": "p",
-      "text": "At I-MED Radiology Network, I lead research delivery and analysis in occupational lung imaging. ExactDust examines agreement and diagnostic performance between chest radiography and HRCT. Related work focuses on quantitative HRCT assessment of structural lung abnormalities."
+      "tag": "project",
+      "title": "Linking quantitative CT with lung function",
+      "question": "How do quantitative CT measurements relate to spirometry and other measures of lung function in coal mine dust lung disease?",
+      "contribution": "In ACARP-supported research, I evaluate CT-derived measurements against spirometry and other available pulmonary function measures to investigate relationships between lung structure and function.",
+      "outputs": []
     },
     {
-      "tag": "h3",
-      "text": "Connecting lung structure and function"
+      "tag": "h2",
+      "text": "Cancer imaging"
     },
     {
-      "tag": "p",
-      "text": "My ACARP-supported research evaluates CT-derived measures of lung function against spirometry and other available pulmonary function measures in coal mine dust lung disease."
+      "tag": "project",
+      "title": "PET–CT tumour segmentation across cancer types",
+      "question": "How well do PET–CT tumour segmentation models generalise across cancer types and patient cohorts?",
+      "contribution": "I evaluate nnU-Net across oesophageal and lung cancer cohorts and public datasets, comparing training strategies and analysing segmentation errors.",
+      "outputs": [
+        {
+          "label": "Cross-cancer evaluation paper — arXiv version",
+          "url": "https://arxiv.org/abs/2508.18612"
+        }
+      ]
     }
   ],
   "about": [

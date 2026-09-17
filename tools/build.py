@@ -41,13 +41,17 @@ home=f'''<section class="hero"><div class="hero-copy"><p class="eyebrow">Soumen 
 page('index.html','Home','Soumen Ghosh: medical imaging AI and quantitative imaging researcher at I-MED, with academic appointments at UQ and CDU.',home,True)
 rs=data['research'];intro=rs[0]['text'];content='';idx=0
 for b in rs[1:]:
- if b['tag']=='h2':idx+=1;content+=f'<h3 id="theme-{idx}">{esc(b["text"])}</h3>'
- elif b['tag']=='h3':content+=f'<h4>{esc(b["text"])}</h4>'
- else:content+=blocks([b])
+ if b['tag']=='h2':
+  if idx:content+='</section>'
+  idx+=1;content+=f'<section class="research-area" aria-labelledby="theme-{idx}"><h3 id="theme-{idx}">{esc(b["text"])}</h3>'
+ elif b['tag']=='project':
+  outputs='<ul class="project-outputs" aria-label="Related research outputs">'+''.join('<li>'+link(o['label']+' ↗',o['url'])+'</li>' for o in b['outputs'])+'</ul>' if b['outputs'] else ''
+  content+=f'<article class="research-project"><h4>{esc(b["title"])}</h4><div><p class="project-question">{esc(b["question"])}</p><p class="project-contribution"><strong>My contribution:</strong> {esc(b["contribution"])}</p>{outputs}</div></article>'
+if idx:content+='</section>'
 delivery=data['research_delivery']
 capabilities=''.join(f'<article class="research-capability"><span class="capability-number" aria-hidden="true">{i:02d}</span><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></article>' for i,item in enumerate(delivery['capabilities'],1))
 delivery_section=f'<section class="research-delivery" aria-labelledby="delivery-title"><div class="delivery-heading"><h2 id="delivery-title">{esc(delivery["title"])}</h2><p class="delivery-intro">{esc(delivery["intro"])}</p></div><div class="research-capabilities">{capabilities}</div></section>'
-projects='<section class="research-projects" aria-labelledby="projects-title"><h2 id="projects-title">Research Areas and Projects</h2><div class="reading-layout"><aside class="section-nav" aria-label="Research themes">'+''.join(f'<a href="#theme-{i}">{esc(t)}</a>' for i,t in enumerate((b['text'] for b in rs if b['tag']=='h2'),1))+'</aside><div class="prose">'+content+'</div></div></section>'
+projects='<section class="research-projects" aria-labelledby="projects-title"><h2 id="projects-title">Research Areas and Selected Projects</h2><div class="research-area-links" aria-label="Research areas">'+''.join(f'<a href="#theme-{i}">{esc(t)}</a>' for i,t in enumerate((b['text'] for b in rs if b['tag']=='h2'),1))+'</div>'+content+'</section>'
 page('research.html','Research','Clinical data, medical imaging and AI research: study design, data collection, method development, validation and publication.', '<div class="research-page">'+heading('Clinical data · Imaging · AI','Research',esc(intro))+delivery_section+projects+'</div>')
 # Bibliographic links remain attached to the corresponding paper, including repeated labels.
 refs={2:('Preprint','https://arxiv.org/abs/2608.03185'),3:('Read on arXiv','https://arxiv.org/abs/2607.15605'),4:('Read on arXiv','https://arxiv.org/abs/2404.10290'),6:('Read article','https://doi.org/10.3389/fneur.2024.1383773'),7:('Read article','https://doi.org/10.1186/s13550-024-01100-x'),9:('arXiv version','https://arxiv.org/abs/2508.18612'),10:('Publisher','https://doi.org/10.1109/ICARCV.2018.8581147'),11:('Publisher','https://doi.org/10.1007/978-3-319-69900-4_32'),12:('Publisher','https://doi.org/10.1007/978-3-319-49397-8_4')}
@@ -60,7 +64,8 @@ for i,b in enumerate(data['publications']):
   label,url=refs[i];details=[s.replace(label+'.','').strip() for s in details];source=link(label+' ↗',url,'text-link')
  else:source=''
  if b.get('source_url'):source=link(b.get('source_label','Source')+' ↗',b['source_url'],'text-link')
- pubs+=f'<article class="publication" data-category="{esc(category,quote=True)}"><p class="pub-type">{esc(category)}</p><h2>{esc(title)}</h2>'+''.join('<p>'+esc(s)+'</p>' for s in details if s)+source+'</article>';count+=1
+ pub_id=' id="'+esc(b['id'],quote=True)+'"' if b.get('id') else ''
+ pubs+=f'<article class="publication"{pub_id} data-category="{esc(category,quote=True)}"><p class="pub-type">{esc(category)}</p><h2>{esc(title)}</h2>'+''.join('<p>'+esc(s)+'</p>' for s in details if s)+source+'</article>';count+=1
 cats=['Recent papers & preprints','Journal articles','Published conference papers','Conference Abstracts']
 filters='<div class="filters"><label>Search publications<input id="publication-search" type="search" placeholder="Title, author or year…"></label><label>Publication type<select id="publication-type"><option value="">All outputs</option>'+''.join(f'<option>{esc(c)}</option>' for c in cats)+'</select></label></div>'
 page('publications.html','Publications','Selected papers, preprints and conference abstracts, with authors and source links.',heading('Publications','Research outputs.','Selected publications in medical imaging and machine learning. Browse the broader record on '+link('Google Scholar',profiles['Google Scholar'])+'.')+filters+f'<p id="result-count" role="status">{count} selected outputs</p><div class="publications">'+pubs+'</div><p id="no-results" hidden>No matching publications. Try another title, author or year.</p>')
