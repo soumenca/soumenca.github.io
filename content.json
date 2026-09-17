@@ -58,22 +58,30 @@
     },
     {
       "tag": "p",
-      "text": "Deep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI\nSoumen Ghosh, Susmita Saha, Diogo Shiraishi, Thiago Rezende, Ian Harding.\n2026 · International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting & Exhibition · Cape Town, South Africa · Conference abstract.",
-      "id": "cerebellar-peduncles-ismrm-2026"
+      "text": "Deep Learning-Based Segmentation of Cerebellar Peduncles Using Diffusion MRI\nSoumen Ghosh, Susmita Saha, Diogo H Shiraishi, Thiago J Rezende, Ian Harding, TRACK-FA Neuroimaging Consortium.\n2026 · International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting & Exhibition · Cape Town, South Africa · Conference abstract.",
+      "id": "cerebellar-peduncles-ismrm-2026",
+      "source_url": "https://echo.ismrm.org/p/ISMRM2026/564-06-012",
+      "source_label": "ISMRM abstract record (full text requires access)"
     },
     {
       "tag": "p",
-      "text": "Evaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance\nSoumen Ghosh, Susmita Saha, Ian Harding.\n2025 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Brisbane, Australia · Conference abstract.",
-      "id": "cerebellar-peduncles-ohbm-2025"
+      "text": "Evaluating Deep Learning for Cerebellar Peduncle Segmentation: Assessing TractSeg’s Performance\nSoumen Ghosh, Susmita Saha, Thiago Rezende, Ian Harding.\n2025 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Brisbane, Australia · Conference abstract.",
+      "id": "cerebellar-peduncles-ohbm-2025",
+      "source_url": "https://zenodo.org/records/15641972",
+      "source_label": "OHBM abstract book (pp. 426–428)"
     },
     {
       "tag": "p",
       "text": "Unsupervised Learning for Lesion Detection on 7T Brain MRI in Patients with Focal Epilepsy\nSoumen Ghosh, Viktor Vegh, John Phamnguyen, Shahrzad Moinian, David Reutens.\n2024 · Organization for Human Brain Mapping (OHBM) Annual Meeting · Seoul, South Korea · Conference abstract.",
-      "id": "lesion-detection-ohbm-2024"
+      "id": "lesion-detection-ohbm-2024",
+      "source_url": "https://apertureneuro.org/article/120593-abstract-book-3-ohbm-2024-annual-meeting.pdf#page=601",
+      "source_label": "Read abstract (PDF, p. 2241)"
     },
     {
       "tag": "p",
-      "text": "Seizure Recurrence Prediction from MRI and Clinical Information Using Novel Brain Features for Machine Learning\nSoumen Ghosh, Viktor Vegh, Alice-Ann Sullivan, Shahrzad Moinian, John Phamnguyen, David Reutens.\n2023 · American Epilepsy Society (AES) Annual Meeting · Orlando, United States · Conference abstract."
+      "text": "Seizure Recurrence Prediction from MRI and Clinical Information Using Novel Brain Features for Machine Learning\nSoumen Ghosh, Viktor Vegh, Alice-Ann Sullivan, Shahrzad Moinian, John Phamnguyen, David Reutens.\n2023 · American Epilepsy Society (AES) Annual Meeting · Orlando, United States · Conference abstract.",
+      "source_url": "https://aesnet.org/abstractslisting/seizure-recurrence-prediction-from-mri-and-clinical-information-using-novel-brain-features-for-machine-learning",
+      "source_label": "Read abstract"
     },
     {
       "tag": "p",
@@ -89,7 +97,9 @@
     },
     {
       "tag": "p",
-      "text": "Early EEG Increases the Rate of Detection of Epileptiform Abnormalities After First Seizure\nAlice-Ann Sullivan, Rebecca Kerr, Xiaohua Chen, Fred Tremayne, Soumen Ghosh, David Reutens.\n2022 · American Epilepsy Society (AES) Annual Meeting · Nashville, United States · Conference abstract."
+      "text": "Early EEG Increases the Rate of Detection of Epileptiform Abnormalities After First Seizure\nAlice-Ann Sullivan, Rebecca Kerr, Xiaohua Chen, Fred Tremayne, Soumen Ghosh, David Reutens.\n2022 · American Epilepsy Society (AES) Annual Meeting · Nashville, United States · Conference abstract.",
+      "source_url": "https://aesnet.org/abstractslisting/early-eeg-increases-the-rate-of-detection-of-epileptiform-abnormalities-after-first-seizure",
+      "source_label": "Read abstract"
     }
   ],
   "research": [
