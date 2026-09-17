@@ -92,7 +92,7 @@
   "research": [
     {
       "tag": "p",
-      "text": "My research brings together medical imaging AI, quantitative biomarkers and clinical evaluation. I work across structural and diffusion MRI and thoracic CT, connecting methodological development with questions in diagnosis, disease characterisation and clinical translation."
+      "text": "My research integrates clinical data, medical imaging, artificial intelligence and quantitative biomarkers to investigate neurological and occupational lung disease. Working with clinical and research teams, I connect clinically meaningful questions with study design, data collection, analysis and validation to generate evidence for diagnosis, disease characterisation and clinical decision-making."
     },
     {
       "tag": "h2",
@@ -417,6 +417,36 @@
       {
         "title": "Review & hand over",
         "text": "Receive the agreed analysis, review or training, with clear explanations and next steps."
+      }
+    ]
+  },
+  "research_delivery": {
+    "title": "Research Design and Delivery",
+    "intro": "My experience spans the full clinical imaging research lifecycle, from defining research questions and designing studies to collecting hospital data, developing methods, validating findings and preparing publications. I work with clinical and research teams across these stages, adapting the work to each study’s objectives and setting.",
+    "capabilities": [
+      {
+        "title": "Study Design",
+        "text": "Clinical problem definition, research questions, study protocols, patient eligibility criteria and analysis planning."
+      },
+      {
+        "title": "Ethics and Study Coordination",
+        "text": "Ethics documentation, research governance, patient recruitment and coordination with hospital and research teams."
+      },
+      {
+        "title": "Clinical Data Preparation",
+        "text": "Data collection from electronic medical records (eMR) and picture archiving and communication systems (PACS), linkage, de-identification, quality control and preprocessing."
+      },
+      {
+        "title": "Reference Standards and Methods",
+        "text": "Establishing reference standards with clinical experts, annotation workflows, quantitative imaging, statistical methods and AI model development."
+      },
+      {
+        "title": "Validation and Interpretation",
+        "text": "Evaluating outputs against reference standards, assessing generalisability, investigating errors and interpreting findings with collaborators."
+      },
+      {
+        "title": "Reporting and Publication",
+        "text": "Research reports, manuscripts, conference presentations and documentation of reproducible methods."
       }
     ]
   }
