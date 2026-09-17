@@ -250,12 +250,18 @@
     },
     {
       "tag": "h2",
-      "text": "CV & contact",
+      "text": "Contact",
       "id": "contact"
     },
     {
       "tag": "p",
-      "text": "For a current academic CV, collaboration enquiries or supervision discussions, contact soumen.ghosh@uq.edu.au."
+      "text": "For collaboration enquiries or supervision discussions, contact soumen.ghosh@uq.edu.au."
+    },
+    {
+      "tag": "p",
+      "text": "",
+      "link_label": "Download academic CV (PDF)",
+      "link_url": "assets/Soumen_Ghosh_CV.pdf"
     },
     {
       "tag": "p",

@@ -5,7 +5,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'content.json').read_text())
 esc=html.escape
 css_version=hashlib.sha256((root/'assets/site.css').read_bytes()).hexdigest()[:12]
-nav=[('index.html','Home'),('research.html','Research'),('publications.html','Publications'),('teaching.html','Teaching & Supervision'),('consulting.html','Consulting & Training'),('news.html','Talks & News'),('about.html','About / CV')]
+nav=[('index.html','Home'),('research.html','Research'),('publications.html','Publications'),('teaching.html','Teaching & Supervision'),('consulting.html','Consulting & Training'),('news.html','Talks & News'),('about.html','About')]
 profiles={'Google Scholar':'https://scholar.google.co.in/citations?user=yuB4f7IAAAAJ&hl=en','ORCID':'https://orcid.org/0000-0002-8360-5309','LinkedIn':'https://www.linkedin.com/in/soumen-ghosh-aaa58ba4/','GitHub':'https://github.com/soumenca'}
 def link(label,url,cls=''):
  return f'<a class="{cls}" href="{esc(url,quote=True)}">{esc(label)}</a>'
@@ -14,7 +14,6 @@ def blocks(bs):
  for b in bs:
   t=b['text'].replace('Academic engagement in research and teaching.','Appointed September 2026.').replace('AES HDR travel award (2023)','UQ HDR travel support to attend AES (2023)')
   if t.startswith('Google Scholar'):continue
-  if t.startswith('For a current academic CV,'):t='Download my selected academic CV below. For collaboration enquiries or supervision discussions, contact soumen.ghosh@uq.edu.au.'
   tag=b['tag']
   if tag=='ul':out+='<ul>'+''.join('<li>'+esc(s)+'</li>' for s in t.splitlines() if s.strip())+'</ul>';continue
   ls=t.splitlines();txt='<br>'.join(('<strong>'+esc(s)+'</strong>') if i==0 and len(ls)>1 else esc(s) for i,s in enumerate(ls))
@@ -27,10 +26,9 @@ def blocks(bs):
 def page(name,title,desc,body,home=False):
  navigation=''.join(f'<a href="{f}"'+(' aria-current="page"' if f==name else '')+f'>{label}</a>' for f,label in nav)
  profile=''.join(link(k,v) for k,v in profiles.items())
- cv_footer='' if home else '<a href="assets/Soumen_Ghosh_CV.pdf">Academic CV (PDF)</a>'
  body_class=' class="home"' if home else ''
  fulltitle='Soumen Ghosh | Medical Imaging AI' if home else title+' | Soumen Ghosh'
- doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(fulltitle)}</title><meta name="description" content="{esc(desc,quote=True)}"><meta name="theme-color" content="#123c43"><meta property="og:title" content="{esc(fulltitle,quote=True)}"><meta property="og:description" content="{esc(desc,quote=True)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css?v={css_version}"><script src="assets/site.js" defer></script></head><body{body_class}><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="nav-wrap"><a class="wordmark" href="index.html">Soumen Ghosh<span>Researcher · Brisbane</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Main navigation">{navigation}</nav></div></header><main id="main">{body}</main><footer><div class="footer-inner"><div><a class="wordmark" href="index.html">Soumen Ghosh, PhD</a><p>Medical Imaging AI &amp; Quantitative Imaging</p><a href="about.html#contact">Contact</a></div><div class="footer-links">{profile}{cv_footer}</div></div><div class="footer-bottom">Brisbane, Australia<span>Updated September 2026</span></div></footer></body></html>'''
+ doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(fulltitle)}</title><meta name="description" content="{esc(desc,quote=True)}"><meta name="theme-color" content="#123c43"><meta property="og:title" content="{esc(fulltitle,quote=True)}"><meta property="og:description" content="{esc(desc,quote=True)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css?v={css_version}"><script src="assets/site.js" defer></script></head><body{body_class}><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="nav-wrap"><a class="wordmark" href="index.html">Soumen Ghosh<span>Researcher · Brisbane</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Main navigation">{navigation}</nav></div></header><main id="main">{body}</main><footer><div class="footer-inner"><div><a class="wordmark" href="index.html">Soumen Ghosh, PhD</a><p>Medical Imaging AI &amp; Quantitative Imaging</p><a href="about.html#contact">Contact</a></div><div class="footer-links">{profile}</div></div><div class="footer-bottom">Brisbane, Australia<span>Updated September 2026</span></div></footer></body></html>'''
  (root/name).write_text(doc)
 
 def heading(kicker,title,intro=''):
@@ -71,7 +69,7 @@ filters='<div class="filters"><label>Search publications<input id="publication-s
 page('publications.html','Publications','Selected papers, preprints and conference abstracts, with authors and source links.',heading('Publications','Research outputs.','Selected publications in medical imaging and machine learning. Browse the broader record on '+link('Google Scholar',profiles['Google Scholar'])+'.')+filters+f'<p id="result-count" role="status">{count} selected outputs</p><div class="publications">'+pubs+'</div><p id="no-results" hidden>No matching publications. Try another title, author or year.</p>')
 page('teaching.html','Teaching & Supervision','Teaching experience and research supervision in medical imaging AI.',heading('Teaching & supervision','Learning through research.')+'<div class="prose standalone">'+blocks(data['teaching'])+'</div>')
 page('news.html','Talks & News','Academic appointments, research updates, invited talks and conference contributions.',heading('Talks & news','Sharing research.<br>Connecting ideas.')+'<div class="prose standalone news-prose">'+blocks(data['talks'])+'</div>')
-page('about.html','About / CV','Biography, academic appointments, education and downloadable CV for Soumen Ghosh.',heading('About / CV','Soumen Ghosh, PhD.','Medical imaging AI researcher based in Brisbane, Australia.')+'<div class="cv-banner"><div><strong>Selected academic CV</strong><p>Appointments, education, teaching and selected research outputs · September 2026</p></div>'+link('Download PDF','assets/Soumen_Ghosh_CV.pdf','button primary')+'</div><div class="prose standalone">'+blocks(data['about'])+'</div>')
+page('about.html','About','Biography, academic appointments, education and downloadable CV for Soumen Ghosh.',heading('About','Soumen Ghosh, PhD.','Medical imaging AI researcher based in Brisbane, Australia.')+'<div class="prose standalone">'+blocks(data['about'])+'</div>')
 
 c=data['consulting']
 def enquiry(subject,body=None):
