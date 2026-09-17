@@ -407,31 +407,31 @@
   },
   "research_delivery": {
     "title": "Research Design and Delivery",
-    "intro": "My experience spans the full clinical imaging research lifecycle, from defining research questions and designing studies to collecting hospital data, developing methods, validating findings and preparing publications. I work with clinical and research teams across these stages, adapting the work to each study’s objectives and setting.",
+    "intro": "My experience spans the design and delivery of research involving clinical data, medical imaging and artificial intelligence. Working with clinical and research teams, I connect study planning, ethics and hospital coordination with data collection, reference standards, analytical methods, validation and scientific reporting.",
     "capabilities": [
       {
-        "title": "Study Design",
-        "text": "Clinical problem definition, research questions, study protocols, patient eligibility criteria and analysis planning."
+        "title": "Study Design and Planning",
+        "text": "Defining clinical research questions, study objectives, patient eligibility criteria, outcome measures and analysis plans."
       },
       {
         "title": "Ethics and Study Coordination",
-        "text": "Ethics documentation, research governance, patient recruitment and coordination with hospital and research teams."
+        "text": "Preparing ethics documentation, supporting research governance, coordinating patient recruitment and working with hospital and research teams."
       },
       {
-        "title": "Clinical Data Preparation",
-        "text": "Data collection from electronic medical records (eMR) and picture archiving and communication systems (PACS), linkage, de-identification, quality control and preprocessing."
+        "title": "Clinical Data and Reference Standards",
+        "text": "Collecting and linking clinical records and images from hospital systems (eMR/PACS), de-identifying and preparing data, and establishing reference standards with clinical experts."
       },
       {
-        "title": "Reference Standards and Methods",
-        "text": "Establishing reference standards with clinical experts, annotation workflows, quantitative imaging, statistical methods and AI model development."
+        "title": "Analysis and Model Development",
+        "text": "Statistical analysis, image preprocessing, feature engineering, quantitative biomarker development and machine learning using clinical data and medical images."
       },
       {
-        "title": "Validation and Interpretation",
-        "text": "Evaluating outputs against reference standards, assessing generalisability, investigating errors and interpreting findings with collaborators."
+        "title": "Validation and Clinical Interpretation",
+        "text": "Evaluating predictive and segmentation performance, testing generalisability across cohorts, investigating errors and interpreting findings with clinical collaborators."
       },
       {
-        "title": "Reporting and Publication",
-        "text": "Research reports, manuscripts, conference presentations and documentation of reproducible methods."
+        "title": "Reporting and Reproducibility",
+        "text": "Preparing research reports, manuscripts and conference presentations, supported by documented methods, reproducible analysis workflows and clear reporting of limitations."
       }
     ]
   }
