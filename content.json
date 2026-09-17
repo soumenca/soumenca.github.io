@@ -149,22 +149,6 @@
     {
       "tag": "p",
       "text": "My ACARP-supported research evaluates CT-derived measures of lung function against spirometry and other available pulmonary function measures in coal mine dust lung disease."
-    },
-    {
-      "tag": "h2",
-      "text": "Clinical AI evaluation & translation"
-    },
-    {
-      "tag": "p",
-      "text": "Across these projects, I focus on validation in clinical cohorts, multi-site variability, harmonisation, error analysis and transparent reporting. My experience spans clinical data curation, imaging quality control, segmentation, statistical analysis and reproducible machine learning pipelines."
-    },
-    {
-      "tag": "p",
-      "text": "Methods: MRI and CT analysis · Deep learning · Quantitative biomarkers · Multi-site harmonisation · Diagnostic performance evaluation"
-    },
-    {
-      "tag": "p",
-      "text": "For research collaborations: soumen.ghosh@uq.edu.au"
     }
   ],
   "about": [
@@ -222,7 +206,8 @@
     },
     {
       "tag": "h2",
-      "text": "CV & contact"
+      "text": "CV & contact",
+      "id": "contact"
     },
     {
       "tag": "p",
@@ -284,11 +269,9 @@
     },
     {
       "tag": "p",
-      "text": "Students interested in research projects, internships or remotely supervised work are welcome to contact me with a brief description of their interests and experience."
-    },
-    {
-      "tag": "p",
-      "text": "soumen.ghosh@uq.edu.au"
+      "text": "Students interested in research projects, internships or remotely supervised work are welcome to contact me with a brief description of their interests and experience.",
+      "link_label": "Contact details ↗",
+      "link_url": "about.html#contact"
     }
   ],
   "talks": [
@@ -350,7 +333,9 @@
     },
     {
       "tag": "p",
-      "text": "For seminars on medical imaging AI, neuroimaging or clinical evaluation: soumen.ghosh@uq.edu.au."
+      "text": "For seminar invitations on medical imaging AI, neuroimaging or clinical evaluation, please get in touch.",
+      "link_label": "Contact details ↗",
+      "link_url": "about.html#contact"
     }
   ],
   "consulting": {
